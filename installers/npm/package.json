@@ -1,15 +1,15 @@
 {
-  "name": "elm",
+  "name": "zaptic-elm",
   "version": "0.19.1-5",
   "description": "Installer for Elm: just downloads the binary into node_modules",
   "preferGlobal": true,
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/elm/compiler.git"
+    "url": "https://github.com/Zaptic/elm-compiler.git"
   },
-  "homepage": "https://github.com/elm/compiler/tree/master/installers/npm",
-  "bugs": "https://github.com/elm/compiler/issues",
+  "homepage": "https://github.com/Zaptic/elm-compiler/tree/master/installers/npm",
+  "bugs": "https://github.com/Zaptic/elm-compiler/issues",
   "author": {
     "name": "Evan Czaplicki",
     "email": "evan@elm-lang.org",
