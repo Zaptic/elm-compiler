@@ -35,8 +35,10 @@
     "install",
     "installer"
   ],
-  "bin": { "elm": "bin/elm" },
+  "bin": {
+    "elm": "bin/elm"
+  },
   "dependencies": {
-    "request": "^2.88.0"
+    "axios": "^1.3.5"
   }
 }

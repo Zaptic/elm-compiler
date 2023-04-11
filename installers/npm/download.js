@@ -1,7 +1,7 @@
 var fs = require("fs");
 var package = require("./package.json");
 var path = require("path");
-var request = require("request");
+var axios = require("axios");
 var zlib = require("zlib");
 
 // MAIN
@@ -71,7 +71,10 @@ module.exports = function (callback) {
     });
 
   // put it all together
-  request(url).on("error", reportDownloadFailure).pipe(gunzip).pipe(write);
+  axios
+    .get(url, { responseType: "stream" })
+    .then((r) => r.data.pipe(gunzip).pipe(write))
+    .catch(reportDownloadFailure);
 };
 
 // VERIFY PLATFORM
